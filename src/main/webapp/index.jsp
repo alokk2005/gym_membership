@@ -6,7 +6,7 @@
 <style>
     body {
         font-family: "Poppins", Arial, sans-serif;
-        background: linear-gradient(135deg, #4facfe, #00f2fe);
+        background: linear-gradient(135deg, #fdfbfb, #ebedee); /* soft light gradient */
         height: 100vh;
         margin: 0;
         display: flex;
@@ -15,14 +15,15 @@
         overflow: hidden;
     }
 
-    /* Animated floating circles background */
+    /* Light animated floating circles */
     body::before, body::after {
         content: "";
         position: absolute;
-        width: 300px;
-        height: 300px;
-        background: rgba(255, 255, 255, 0.15);
+        width: 280px;
+        height: 280px;
+        background: rgba(255, 255, 255, 0.6);
         border-radius: 50%;
+        filter: blur(40px);
         animation: float 6s ease-in-out infinite;
     }
 
@@ -41,11 +42,11 @@
     }
 
     .container {
-        background: rgba(255, 255, 255, 0.25);
-        backdrop-filter: blur(15px);
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(12px);
         padding: 40px;
         border-radius: 20px;
-        box-shadow: 0px 8px 25px rgba(0,0,0,0.25);
+        box-shadow: 0px 8px 25px rgba(0,0,0,0.15);
         text-align: center;
         width: 380px;
         animation: fadein 1.2s ease-in-out;
@@ -58,15 +59,14 @@
 
     h2 {
         margin-bottom: 25px;
-        color: #fff;
+        color: #333;
         font-size: 26px;
         letter-spacing: 1px;
-        text-shadow: 0px 3px 8px rgba(0,0,0,0.4);
     }
 
     a {
         display: block;
-        background: linear-gradient(90deg, #43e97b, #38f9d7);
+        background: linear-gradient(90deg, #92fe9d, #00c9ff);
         color: white;
         font-weight: bold;
         padding: 14px;
@@ -75,14 +75,14 @@
         text-decoration: none;
         font-size: 17px;
         transition: 0.3s;
-        box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+        box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
         transform: scale(1);
     }
 
     a:hover {
         transform: scale(1.06);
-        background: linear-gradient(90deg, #00c6ff, #0072ff);
-        box-shadow: 0px 6px 20px rgba(0,0,0,0.35);
+        background: linear-gradient(90deg, #4facfe, #00f2fe);
+        box-shadow: 0px 6px 20px rgba(0,0,0,0.25);
     }
 
     a:active {
